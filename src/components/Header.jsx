@@ -3,7 +3,7 @@ import { useLocation,useNavigate } from 'react-router-dom'
 
 export default function Header() {
 
-    const location = useLocation()
+    const location = useLocation() 
     const navigate = useNavigate()
 
     function matchroute(route){
@@ -41,14 +41,14 @@ export default function Header() {
                     Offers
                   </li>
                   <li
-                    className={`cursor-pointer py-3 text-gray-500 text-sm font-semibold border-b-[3px] 
+                        className={`cursor-pointer py-3 text-gray-500 text-sm font-semibold border-b-[3px] 
                      border-b-transparent ${matchroute('/sign-in') && 'text-black border-b-red-600'}
                     `}
                     onClick={()=>navigate('/sign-in')}
                  >
                    Signin
                  </li>
-                    
+                   
                 </ul>
             </div>
         </header>
